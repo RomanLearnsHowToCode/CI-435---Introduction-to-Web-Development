@@ -1,0 +1,92 @@
+<!DOCTYPE html><!--HTML5 doctype declaration -->
+<html lang="en"><!--default language of the document content -->
+
+<head>
+	<meta charset="utf-8"><!--character encoding for the document (Unicode) -->
+	<title>Learning journal - Tutorial page</title><!--web page title -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/normalize.css" rel="stylesheet"><!--link to css normalizer file -->
+	<link href="css/stylesheet.css" rel="stylesheet"><!-- add info -->
+</head>
+
+<body><!--Markup all web page content inside the 'body' tags -->
+<a id="top"></a>
+<div id="wrapper">
+<!--The 'wrapper' contains all the page content-->
+<header class="banner"><!--The main heading for the page -->
+	<h1>Learning journal - tutorial</h1>
+	<h2>Main navigation</h2>
+</header>
+<nav class="menu"><!--The primary navigation for the page -->
+	<ul>
+		<li><a href="index.html">Learning Journal</a></li>
+		<li><a href="">:Tutorial: </a></li> <!-- colon is working as active page indicator for better orientation at website -->
+		<li><a href="contact.html">Contact me</a></li>
+	</ul>
+</nav>
+<nav> <!-- As you can see this is not any navigation, I can create new class in CSS file but I don't like to complicate things, since this is for website project only, I will use NAV as my list of items section -->
+	<h2>You will need:</h2> <!-- As you can see I created my tutorial as articles -->
+	<ol>
+		<li><a href="#computer">Computer</a></li>
+		<li><a href="#connection">Connection to internet</a></li>
+		<li><a href="#video">Video file</a></li>
+		<li><a href="#youtube">YouTube account</a></li>			
+	</ol>
+</nav>
+
+<main>
+<br />
+	<h2>My tutorial is about uploading your video to online platform </h2>
+	<p>This will be your first step to become YouTuber</p>
+	<article> <!-- It is very important to stay consistent with style of code, each article is written in same style, so it is easier to edit code later -->
+		<a id="computer"></a>
+		<header class="post">
+			<h3>Get yourself some computing device</h3>
+			<p>Published on <time datetime="2019-01-13"><strong>January 13, 2019</strong></time></p>
+		</header>
+<p>Every exciting story have it's beginning, our story will start with you, getting yourself some nice computer.</p>
+<figure>
+	<img src="Images/personalcomputer.jpg" alt="Picture of my new laptop"/>
+	<figcaption>Fresh arival of my Asus ROG Zephyrus laptop<br />
+	<small>Asus ROG Zephyrus &copy; Roman Liewehr</small>
+	</figcaption>
+</figure>
+<p><a href="#top">Go to top</a></p>
+	</article>
+	<article> <!-- It is very important to stay consistent with style of code, each article is written in same style, so it is easier to edit code later -->
+		<a id="connection"></a>
+		<header class="post">
+			<h3>I guess this is obvious</h3>
+			<p>Published on <time datetime="2019-01-13"><strong>January 13, 2019</strong></time></p>
+		</header>
+<p>Altought there are options how to get connected to internet, I prefer connection via ethernet with lan cable, most common way to connect nowdays is Wifi.</p>
+<p><a href="#top">Go to top</a></p>
+	</article>
+	<article>
+		<a id="video"></a>
+		<header class="post">
+			<h3>Make some video</h3>
+			<p>Published on <time datetime="2019-01-13"><strong>January 13, 2019</strong></time></p>
+		</header>
+<p>My video created only for this tutorial. And yes it is 4k !!</p>
+<iframe width="560" height="315"  src="https://www.youtube.com/embed/cjWK2_qRxcE" frameborder="0" allowfullscreen></iframe> <!-- Constant fight with this in validator, it is working very well, don't know why they want me to use CSS, when then youtube will block that link, I have tried both ways, this one works. -->
+<p><a href="#top">Go to top</a></p>
+	</article>
+	<article>
+		<a id="youtube"></a>
+		<header class="post">
+			<h3>Set up your YouTube account</h3>
+			<p>Published on <time datetime="2019-01-13"><strong>January 13, 2019</strong></time></p>
+		</header>
+<p>This step is very easy to do, go to YouTube. Register or login if you have got Google account and only follow steps to upload your video, don't forget to add some metadata such as tags and description so you will obtain more audience. Good luck my fellow YouTuber.</p>
+<p><a href="#top">Go to top</a></p>
+</article>
+</main>
+ 
+	<footer><!--Footer content -->
+		<p><a href="#top">Go to top</a></p> <!-- As you can see my main page go to top and footer go to top looks a bit different, its because my footer setup and css override the rest --> 
+		<small>&copy; 2018, Roman Liewehr.</small>
+	</footer>
+</div><!--Close 'wrapper' div -->
+</body><!--Close 'body' -->
+</html><!--Close 'html' -->
